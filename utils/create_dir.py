@@ -1,6 +1,4 @@
 import os
-import zipfile
-import shutil
 
 
 def create_download_dir():
