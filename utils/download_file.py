@@ -7,3 +7,5 @@ def download_file(download_dir):
         print('file already exists')
     else:
         os.system(f'kaggle datasets download ankitbansal06/retail-orders -f orders.csv -p {download_dir}')
+
+    return zip_file_path, download_dir
