@@ -1,6 +1,18 @@
 import os
 
-def download_file(download_dir):
+def download_file(download_dir:str) -> tuple[str,str]:
+    '''
+        connects to the kaggle api, authenticates and downloads the specified file
+
+        args:
+            download_dir(str): path to created directory where downloaded files are stored
+        
+            return:
+                tuple[str,str]: 
+                absolute file path for downloded file
+                directory name where downloaded files are stored
+    '''
+
     zip_file_path = os.path.join(f"{download_dir}", 'orders.csv.zip')
 
     if os.path.exists(zip_file_path):
