@@ -1,9 +1,9 @@
-# "Data Pipeline Integration with Kaggle API, SQL Server, and Power BI"
+# Data Pipeline Integration with Kaggle API, SQL Server, and Power BI
 
 <br/>
 
 # Project Description:
-### This project demonstrates an end-to-end data engineering workflow using Python, SQL Server, and Power BI. The primary goal is to connect to the Kaggle API using Python to download a specified dataset, perform data transformations with Pandas, load the transformed data into SQL Server, and visualize the data in Power BI.
+This project demonstrates an end-to-end data engineering workflow using Python, SQL Server, and Power BI. The primary goal is to connect to the Kaggle API using Python to download a specified dataset, perform data transformations with Pandas, load the transformed data into SQL Server, and visualize the data in Power BI.
 <br />
 
 # Requirements
@@ -15,14 +15,18 @@
 
 ## Key components of the project include:
 
-### Data Acquisition: Using Python to connect to the Kaggle API and download datasets.
-### Data Transformation: Utilizing Pandas to clean, manipulate, and prepare the data for further analysis.
-### Data Loading: Storing the processed data into SQL Server for structured querying and management.
-### Data Visualization: Employing Power BI to create interactive and insightful visualizations from the SQL Server data.
+Data Acquisition: Using Python to connect to the Kaggle API and download datasets.
+
+Data Transformation: Utilizing Pandas to clean, manipulate, and prepare the data for further analysis.
+
+Data Loading: Storing the processed data into SQL Server for structured querying and management.
+
+Data Visualization: Employing Power BI to create interactive and insightful visualizations from the SQL Server data.
 
 <br>
 
 ## Data Pipeline Diagram
+
 ![Data Pipeline](./img/presentation.gif)
 
 
@@ -54,7 +58,7 @@ git clone https://repo-url```
 
 # Contribution/Modification
 
-## Change the url to your dataset of choice in the *utils/download_file.py*
+## Change the url to your dataset of choice using *utils/download_file.py*
 
 ```os.system(f'kaggle datasets download [account_name]/[dataset_name] -f new_filename.csv -p {download_dir}')```
 
@@ -62,7 +66,7 @@ git clone https://repo-url```
 
 ```os.system(f'kaggle datasets download ioaviator/retail-orders -f orders.csv -p {download_dir}')```
 
-## Clean/transform the data in the *etl/transform.py*
+## Clean/transform the data using *etl/transform.py*
 
 ```
 def transform() -> pd.DataFrame:
